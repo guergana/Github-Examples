@@ -1,8 +1,8 @@
-name: example-workflow
+name: conditional-workflow
 on: [push]
 jobs:
   hello-world:
-    if: github.repository == 'octo-org/octo-repo-prod'
+    if: github.repository == 'guergana/Github-Examples'
     runs-on: ubuntu-latest
     steps:
       - name: "Hello World"
