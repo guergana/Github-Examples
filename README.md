@@ -43,3 +43,7 @@ on:
 If we get a 403 we need to set GITHUB_TOKEN: https://github.com/settings/personal-access-tokens
 
 then add the token here: `export GITHUB_TOKEN=<TOKEN>`
+
+## Dependent jobs
+
+Jobs usually run on parallel, if we want to run the sequentially, we need to use the `needs` keyword. See: `/github-actions/templates/dependent-jobs2.yml`
